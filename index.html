@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap required css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Fontawesome import -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Car Deals</title>
+</head>
+
+<body>
+    <!-- Header of the page with the main car background image -->
+    <header>
+        <!-- One section that contains the navigation bar menu and also the title with description -->
+        <section>
+            <!-- Navigation bar from bootstrap but only the mobile version of it is visible for all devices -->
+            <nav class="navbar navbar-light">
+                <button id="buttonNav" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Louer une voiture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Louer un utilitaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Réserver un chauffeur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Découvrez nos agences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mon Compte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- A section with the main title and a paragraph -->
+            <section>
+                <h1>Bienvenue à bord</h1>
+                <p>Location de voiture 24h/24 et 7j/7</p>
+            </section>
+        </section>
+        <!-- Form to select some information -->
+        <form action="#">
+            <section>
+                <div class="form-group">
+                    <select class="form-control" id="select">
+                        <option>Adresse de départ</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <!-- Copied this date picker from the internet, instead of using a type='date', changed the icon -->
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input placeholder="Début de la location" type='text' class="form-control" />
+                        <button id="start">
+                            <i class="fas fa-calendar-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <!-- Same as other one -->
+                    <div class='input-group date' id='datetimepicker2'>
+                        <input placeholder="Fin de la location" type='text' class="form-control" />
+                        <button id="end">
+                            <i class="fas fa-calendar-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" class="btn btn-success" value="Valider ma recherche">
+        </form>
+    </header>
+
+    <!-- Main section of the page containing the cars and the agency information -->
+    <main>
+        <!-- First section with one section and all products (in articles) inside -->
+        <section>
+            <!-- This section contains the number of results and the ordering method -->
+            <section>
+                <h2><strong>7</strong> résultats</h2>
+                <select class="form-control" id="selectOrder">
+                    <option>Prix croissant</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </section>
+            <!-- First car, it's an article containing 2 sections, one for the image and the other for the description -->
+            <article>
+                <section>
+                    <img src="img/vehicule1.png" alt="vehicule1" id="peugeot">
+                </section>
+                <section>
+                    <h3>Peugoet 208</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+            <!-- Second car -->
+            <article>
+                <section>
+                    <img src="img/vehicule2.png" alt="vehicule2" id="ford">
+                </section>
+                <section>
+                    <h3>Ford Focus</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+            <!-- Third car -->
+            <article>
+                <section>
+                    <img src="img/vehicule3.png" alt="vehicule3" id="audi">
+                </section>
+                <section>
+                    <h3>Audi A1</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,55/km supplémentaire).</p>
+                    <p>1 100 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+            <!-- Fourth car -->
+            <article>
+                <section>
+                    <img src="img/vehicule4.png" alt="vehicule4" id="opel">
+                </section>
+                <section>
+                    <h3>Opel Mokka</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,4/km supplémentaire).</p>
+                    <p>1 150 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+            <!-- Fifth car, will only be shown when scrolling down with the class "generated" -->
+            <article class="generated">
+                <section>
+                    <img src="img/vehicule1.png" alt="vehicule1" id="peugeot2">
+                </section>
+                <section>
+                    <h3>Peugoet 208</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+            <!-- Sixth car, same class "generated" -->
+            <article class="generated">
+                <section>
+                    <img src="img/vehicule2.png" alt="vehicule2" id="ford2">
+                </section>
+                <section>
+                    <h3>Ford Focus</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
+                    <p>999 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+            <!-- Seventh car, same class "generated" -->
+            <article class="generated">
+                <section>
+                    <img src="img/vehicule3.png" alt="vehicule3" id="audi2">
+                </section>
+                <section>
+                    <h3>Audi A1</h3>
+                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,55/km supplémentaire).</p>
+                    <p>1 100 € - Agence de Paris</p>
+                    <button class="btn btn-success">Réserver et Payer</button>
+                </section>
+            </article>
+        </section>
+        <!-- Footer of the main section -->
+        <footer>
+            <!-- Image of the agency -->
+            <div>
+                <img id="agence" src="img/agence.jpg" alt="Agence">
+            </div>
+            <!-- Article with the information about the agency -->
+            <article>
+                <p>
+                    <span>Notre agence de <strong>Paris</strong></span>
+                    <span>300 boulevard de vaugirard, 75015, Paris</span>
+                    <span>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</span>
+                    <span>01 49 78 21 33</span>
+                    <span>contact@vtc.com</span>
+                </p>
+            </article>
+        </footer>
+    </main>
+
+
+    <!-- Loading jQuery from cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap required scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- My own script -->
+    <script src="script/main.js"></script>
+</body>
+
+</html>
